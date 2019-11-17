@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 var prefix = "-";
 client.on('message', message => {
-    if (message.content == "#سرعه") {
+    if (message.content == "-سرعه") {
         var x = ["DreamKing",
 "DeathGames",
 "زيرو كنج",
@@ -49,69 +49,8 @@ client.on('message', message => {
 	    
 	    
 	    
-	
 
-	    
-client.on('message', message => {
-    if (message.content == "#ارقام") {
-        var x = ["DreamKing",
-	"DeathGames",
-	"1010104141",
-	"9 7 5 6 4 2",
-	"1 2 4 6 0 0",
-	"44444444",
-	"12346789",
-	"98765341",
-	"120130104105",
-	"789456321",
-	"20200202",
-	"10512055",
-	"50 60 40 50 44",
-	];
-	 
-	    
-	    
-	    
-	     var x3 = Math.floor(Math.random()*x.length)
-	     message.channel.send(` الاسرع في كتابة الارقام :  __**${x[x3]}**__
-لديك 15 ثانية للاجابة`).then(msg1=> {
-            var r = message.channel.awaitMessages(msg => msg.content == x2[x3], {
-                maxMatches : 1,
-                time : 15000,
-                errors : ['time']
-            })
-        r.catch(() => {
-            return message.channel.send(`:negative_squared_cross_mark: لقد انتهى الوقت ولم يقم أحد بالأجابة بشكل صحيح 
-            الإجآبة الصحيحةة هي __**${x2[x3]}**__`)
-        })
-        
-        r.then((collected)=> {
-            message.channel.send(`${collected.first().author} لقد قمت بكتابة الكلمة في الوقت المناسب  `);
-        })
-        })
-    }
-})
-
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	  
-	    
-	    
-	    
-	    
-	    
-	    
-        
-	
+		
         var x3 = Math.floor(Math.random()*x.length)
         message.channel.send(` اول شخص يكتب :  __**${x[x3]}**__
 لديك 15 ثانية للاجابة`).then(msg1=> {
@@ -133,7 +72,7 @@ client.on('message', message => {
 })
 
 client.on('message', puz => {
-    if (puz.content == "#لغز") {
+    if (puz.content == "-لغز") {
         var x = ["ما هي حاسة الشم عند الثعبان ؟",
 "ما هو الشي الذي يكسو الناس و هو عار بدون ملابس ؟",
 "ما هو الشي الذي لا يجري و لا يمشي ؟",
@@ -184,7 +123,7 @@ client.on('message', puz => {
 })
 
 client.on('message', fkk => {
-    if (fkk.content == "#فكك") {
+    if (fkk.content == "-فكك") {
         var x = ["المتاح للجميع لا يتاح لي",
 "خعاخع",
 "فيلا",
